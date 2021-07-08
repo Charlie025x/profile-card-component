@@ -7,7 +7,7 @@ body {
 }
 
 body {
-    background-image: url(./images/bg-pattern-top.svg);
+    background-image: url(/images/bg-pattern-top.svg);
 }
 
 /* .background { grid-area: bg; } */
@@ -35,7 +35,7 @@ body {
     font-family: 'Kumbh Sans', sans-serif;
     align-items: end;
     box-sizing: border-box;
-    background-image: url(/images/bg-pattern-card.svg);
+    background-image: url('/images/bg-pattern-card.svg');
     background-repeat: no-repeat, repeat;
     background-size: 100%;
 }
