@@ -7,7 +7,7 @@ body {
 }
 
 body {
-    background-image: url(images/bg-pattern-top.svg);
+    background-image: url(./images/bg-pattern-top.svg);
 }
 
 /* .background { grid-area: bg; } */
