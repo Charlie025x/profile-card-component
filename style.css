@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;700&display=swap');
 
 body {
     margin: 0;
@@ -6,7 +6,11 @@ body {
     background-color: hsl(185, 75%, 39%);
 }
 
-.background { grid-area: bg; }
+body {
+    background-image: url(images/bg-pattern-top.svg);
+}
+
+/* .background { grid-area: bg; } */
 .user-info { grid-area: main; }
 .info1 { grid-area: in1; }
 .info2 { grid-area: in2; }
@@ -20,9 +24,8 @@ body {
     border-radius: 25px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr .8fr;
+    grid-template-rows: 2fr .8fr;
     grid-template-areas: 
-    "bg bg bg"
     "main main main"
     "in1 in2 in3";
     margin:auto;
@@ -32,10 +35,18 @@ body {
     font-family: 'Kumbh Sans', sans-serif;
     align-items: end;
     box-sizing: border-box;
+    background-image: url(/images/bg-pattern-card.svg);
+    background-repeat: no-repeat, repeat;
+    background-size: 100%;
 }
 
-.background img {
-    width: 100%;
+
+.profilePic {
+    position: relative;
+    top: 105px;
+    left: 0px;
+    border-radius: 50%;
+    border: 5px white solid;
 }
 
 h2 {
@@ -52,16 +63,17 @@ p {
     padding-bottom: 16px;
 }
 
+.userName {
+    margin-top: 140px;
+}
+
 .userAge {
     color:hsl(227, 10%, 46%);
+    font-weight: 300;
 }
 
 .userLocation {
     border-bottom: hsl(227, 10%, 46%) 1px solid;
-}
-
-.info {
-    /* border-top: hsl(0, 0%, 59%) 1px solid; */
 }
 
 .statsOf {
@@ -71,7 +83,6 @@ p {
 @media only screen and (min-width: 992px) {
     .card {
         margin-top: 15vh;
-        height: 70vh;
     }
 }
 
